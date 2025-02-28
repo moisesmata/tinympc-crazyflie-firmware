@@ -7,6 +7,15 @@
 extern "C" {
 #endif
 
+// Dimensions
+#define BENCH_NX 12
+#define BENCH_NU 4
+#define BENCH_N 10  // Horizon length, adjust as needed
+
+enum RhoMethod {
+    OPTIMAL,    // Sqrt ratio method
+    SIMPLE,     // Simple heuristic
+};
 
 struct RhoAdapter {
     float rho_min;
